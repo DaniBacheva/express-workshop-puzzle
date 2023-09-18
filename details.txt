@@ -1,0 +1,11 @@
+  <main>
+      {{#with puzzle}}
+      <h1>{{name}}</h1>
+      <img class="puzzle" src="{{imageUrl}}">
+      <div class="details">
+        <p><span>Description:</span> {{description}}</p>
+        <p><span>Pieces:</span> {{pieces}}</p>
+        <a class="btn" href="/">Back</a>
+      </div>
+      {{/with}}
+    </main>

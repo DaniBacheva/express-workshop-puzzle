@@ -1,0 +1,11 @@
+    <main>
+      <h1>About Puzzles</h1>
+      <div class="about">
+        <p>
+          <i>"Puzzles"</i> is a place, where you can browse some of the most popular puzzles in the world and add
+          some new puzzles that
+          you have discovered. This application was created as an exercise for the <a
+            href="https://softuni.bg/trainings/2452/js-back-end-september-2023">JS Back-End course</a> at the
+          <a href="https://softuni.bg/">Software University</a>.</p>
+      </div>
+    </main>

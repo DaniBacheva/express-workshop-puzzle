@@ -1,0 +1,18 @@
+{
+  "name": "express-workshop-puzzle",
+  "version": "1.0.0",
+  "description": "Express Workshop - Puzzles",
+  "main": "nodemon /src/index.js",
+  "scripts": {
+    "start": "nodemon src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

@@ -1,0 +1,22 @@
+     <main>
+      <h1>Browser</h1>
+      <form action="/" method="">
+        <input type="text" class="search" name="search" value="{{search}}"" placeholder="Search...">
+        <input type="number" name="from" class="pieces" value="{{from}}" placeholder="Pieses from...">
+        <span>-</span>
+        <input type="number" name="to" class="pieces" value="{{to}}" placeholder="Pieces to...">
+        <input type="submit" value="search">
+      </form>
+      {{#each puzzle}}
+      <div class="puzzle">
+        <img class="puzzle" src="{{imageUrl}}">
+        <p class="name">{{name}}</p>
+        <p><span>Pieces:</span> {{pieces}}</p>
+        <a class="btn" href="/puzzle/{{id}}/details">Details</a>
+      </div>
+      {{else}}
+      <p> There are no puzzles yet</p>
+   {{/each}}
+  
+    </main>
+ 

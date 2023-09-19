@@ -2,7 +2,7 @@
       <h1>Browser</h1>
       <form action="/" method="">
         <input type="text" class="search" name="search" value="{{search}}"" placeholder="Search...">
-        <input type="number" name="from" class="pieces" value="{{from}}" placeholder="Pieses from...">
+        <input type="number" name="from" class="pieces" value="{{from}}" placeholder="Pieces from...">
         <span>-</span>
         <input type="number" name="to" class="pieces" value="{{to}}" placeholder="Pieces to...">
         <input type="submit" value="search">
@@ -15,7 +15,7 @@
         <a class="btn" href="/puzzle/{{id}}/details">Details</a>
       </div>
       {{else}}
-      <p> There are no puzzles yet</p>
+      <p> There are no puzzles yet!</p>
    {{/each}}
   
     </main>

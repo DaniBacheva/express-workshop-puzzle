@@ -15,5 +15,9 @@ handlebaresConfig(app);
 app.use(homeController);
 app.use('/puzzles', puzzleController);
 
+app.get('*', (req,res) => {
+    res.redirect('/404');
+});
+
 
 app.listen(PORT, () => console.log(`Server is running on port ${PORT}`))

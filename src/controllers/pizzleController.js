@@ -32,6 +32,10 @@ router.get('/:puzzleID/details', (req,res)=> {
     const puzzleId = req.params.puzzleID;
     const puzzle = puzzleManager.getAll().find(p=>p.id==puzzleId);
 
+    if (!puzzle) {
+        return res.redirect('404')
+    }
+
     res.render('details', {puzzle})
 })
 

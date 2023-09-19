@@ -28,5 +28,12 @@ router.post('/create', (req, res) => {
     res.redirect('/')
 });
 
+router.get('/:puzzleID/details', (req,res)=> {
+    const puzzleId = req.params.puzzleID;
+    const puzzle = puzzleManager.getAll().find(p=>p.id==puzzleId);
+
+    res.render('details', {puzzle})
+})
+
 
 module.exports = router;
